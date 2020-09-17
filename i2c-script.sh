@@ -14,5 +14,5 @@ if  groups $user_name | grep -q 'i2c'; then
 else
     sudo usermod -aG i2c $user_name
 fi
-sudo cp /usr/share/ddcutil/data/45-ddcutils-i2c.rules /etc/udev/rules.d
+sudo cp /usr/share/ddcutil/data/45-ddcutil-i2c.rules /etc/udev/rules.d
 echo "Reboot your computer to changes take effect..."
